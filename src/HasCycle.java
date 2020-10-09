@@ -16,7 +16,7 @@ public class HasCycle {
 //            fast=fast.next.next;
 //        }
 //        return true;
-        Set<ListNode> seen = new HashSet<ListNode>();
+        Set<ListNode> seen = new HashSet<>();
         while (head != null) {
             if (!seen.add(head)) {
                 return true;
