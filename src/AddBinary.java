@@ -1,3 +1,6 @@
+/**
+ * @author hjs
+ */
 public class AddBinary {
     public String add(String a, String b) {
 //        String result = "";
