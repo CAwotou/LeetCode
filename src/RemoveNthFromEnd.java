@@ -1,3 +1,6 @@
+/**
+ * @author hjs
+ */
 public class RemoveNthFromEnd {
     public ListNode remove(ListNode head,int n){
         ListNode dummy=new ListNode(0,head);
