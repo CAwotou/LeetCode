@@ -9,16 +9,16 @@ public class Candy {
                     left[i] = 1;
                 }
             }
-            int right = 0, ret = 0;
+            int right = 0, res = 0;
             for (int i = n - 1; i >= 0; i--) {
                 if (i < n - 1 && ratings[i] > ratings[i + 1]) {
                     right++;
                 } else {
                     right = 1;
                 }
-                ret += Math.max(left[i], right);
+                res += Math.max(left[i], right);
             }
-            return ret;
+            return res;
         }
 
     public static void main(String[] args) {
