@@ -9,14 +9,14 @@ public class BuildTree {
     Map<Integer, Integer> indexMap = new HashMap<Integer, Integer>();
 
     public TreeNode build(int[] inorder, int[] postorder) {
-        this.inorder=inorder;
-        this.postorder=postorder;
-        postIndex=postorder.length-1;
-        int index=0;
-        for(int val:inorder){
-            indexMap.put(val,index++);
+        this.inorder = inorder;
+        this.postorder = postorder;
+        postIndex = postorder.length - 1;
+        int index = 0;
+        for (int val : inorder) {
+            indexMap.put(val, index++);
         }
-        return helper(0,inorder.length-1);
+        return helper(0, inorder.length - 1);
     }
 
     //inLeft,inRight当前子树的左右边界
